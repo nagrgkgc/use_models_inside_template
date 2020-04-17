@@ -2,7 +2,7 @@
 
 Lets not use object manager in template or anywhere but easiest way to get object reference of any class is:
 
-<?php $mergedCells = ($this->helper(Magento\Tax\Helper\Data::class)->displayCartBothPrices() ? 2 : 1); ?>
+$mergedCells = ($this->helper(Magento\Tax\Helper\Data::class)->displayCartBothPrices() ? 2 : 1);
 
 for getting checkout session:
 $checkoutSession = $this->helper(Magento\Checkout\Helper\Data::class)->getCheckout();
